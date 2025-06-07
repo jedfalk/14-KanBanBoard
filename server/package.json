@@ -13,7 +13,9 @@
     "postinstall": "npm rebuild bcrypt --build-from-source"
   },
   "nodemonConfig": {
-    "watch": ["src"],
+    "watch": [
+      "src"
+    ],
     "ext": "ts,json,js",
     "exec": "npx tsc && node dist/server.js"
   },
@@ -21,7 +23,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
